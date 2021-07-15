@@ -5,6 +5,8 @@ body{
     font-family: 'Poppins', sans-serif;
    
 }
+
+/* -------------------main part------------------ */
 main{
     display: flex;
     flex-direction: column;
@@ -12,7 +14,7 @@ main{
     justify-content: center;
     background-color: white;
 }
-/* First part- the starting portion  */
+/* --------------------First part- the starting portion ----------------- */
 
 .starting-portion{
     width: 100%;
@@ -50,13 +52,19 @@ a {
 
 
 
-/*-------------------- Heading and Poster */
+/*-------------------- Heading and Poster -----------------------*/
 
 .heading-poster{
     display: flex;
     justify-content: space-between;
     
 }
+.heading{
+    display: flex;
+    flex-direction: column;
+    margin-left: 156px;
+}
+
 .watchLive-logo, .login-logo{
     padding-top: 10px;
     width: 173px;
@@ -64,17 +72,6 @@ a {
     background-color: rgb(214, 33, 33);
     border-radius: 10px;
 }
-
-
-
-
-.heading{
-    display: flex;
-    flex-direction: column;
-    margin-left: 156px;
-}
-
-
 
 .poster img{
     height: 438px;
@@ -84,7 +81,7 @@ a {
 }
 
 
-/* =========  Players */
+/* ========= ---------- Players------------------------------------------ */
 
 .players{
     width: 1050px;
@@ -134,7 +131,7 @@ a {
     
 }
 
-/* -------------------highligts------------------ */
+/* ---------------================----highligts------------------ */
 
 .highlight{
     display: flex;
@@ -158,18 +155,17 @@ a {
 
 .highlight-detail-logo{
     padding-top: 10px;
-    width: 178px;
+    width: 180px;
     height: 44px;
     background-color: red;
     border-radius: 10px;
     overflow: hidden;
     
 }
+
 .watchNow-logo{
     overflow: hidden;
 }
-
-
 
 .match-img img{  
     width:567px;
@@ -205,10 +201,18 @@ a {
 }
 
 
-/* --------------- Hover ---------------- */
+/* ----------------------------------- Hover ---------------- ----------
+==========================================================================*/
 
+/* ------------------------Heading and poster----------------------- */
+
+.heading-poster:hover .heading h1 {
+            color:rgb(233, 82, 12);
+            transform: scale(1.1) ;
+            transition: transform 1s ease-in-out;
+}
 .heading:hover .watchLive-logo{
-            margin-top: 20px;
+            margin-top: 30px;
             background-color: rgb(228, 206, 11);
             border-radius: 100px;
             transform: scale(1.1) rotate(360deg);
@@ -220,12 +224,16 @@ a {
             transform: scale(1.25) ;
             transition: transform 2s ease-in;
 }
+
+/* -------------------------------highlights--------------------------------- */
+
 .highlight-left:hover .highlight-detail-logo{
             margin-top: 20px;
+            width: 180px;
             background-color: rgb(12, 35, 241);
-            border-radius: 100px;
+            border-radius: 10px;
             transform: scale(1.1) rotate(360deg);
-            transition: transform 4s ease-in-out , margin-top 3s,  border-radius 4s, background-color 1s;
+            transition: transform 4s ease-in-out , margin-top 1s,  border-radius 4s, background-color 1s;
 }
 .highlight:hover .match-img img {
             border-radius: 10px;
@@ -237,10 +245,13 @@ a {
             transform: scale(1.3) ;
             transition: transform 1s ease-in-out;
 }
-/*=========== media query */
+/*=========== =================media query================================
+---------------------------------------------------------------------------
+========================================================================== */
 
 
-/* ---------- for mobile---------------- */
+/* ---------- for mobile----------------
+=========================================== */
 
 @media only screen and (max-width: 688px) {
     
@@ -277,11 +288,6 @@ nav {
     
 }
 /*-------------------- Heading and Poster img-----------*/
-.heading-poster{
-    display: flex;
-    flex-direction: column;  
-    
-}
 .heading{
     
     display: flex;
@@ -293,6 +299,11 @@ nav {
     height: 138px;
     width: 278px;
     font-size: 34px;
+}
+.heading-poster{
+    display: flex;
+    flex-direction: column;  
+    
 }
 
 .poster{
@@ -308,7 +319,7 @@ nav {
     
 }
 
-/* =========  Players */
+/* =========  Players========================================= */
 
 .players{
     
@@ -318,7 +329,7 @@ nav {
     grid-gap: 30px;  
 }
 
-/* -------------------highligts------------------ */
+/* -------------------highligts------------------------------ */
 
 .highlight{
     display: flex;
@@ -393,7 +404,9 @@ p{
 }
 
 
-/* ----------------for tab--------------- */
+/* ----------------for tab---------------
+------------------------------------------------------------- */
+
 @media only screen and (min-width: 688px) and (max-width:1300px) {
     
 
@@ -429,13 +442,6 @@ nav {
     
 }
 /*-------------------- Heading and Poster img-----------*/
-.heading-poster{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-    
-}
 .heading{
     
     display: flex;
@@ -448,6 +454,14 @@ nav {
     width: 278px;
     font-size: 34px;
 }
+.heading-poster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    
+}
+
 
 .poster{
     margin-left: 40px;
